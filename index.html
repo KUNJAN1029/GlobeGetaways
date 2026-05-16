@@ -3,25 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlobeGetaways</title>
+    <title>GlobeGetaways | Modern Travel Adventures</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="site_header">
-        <div class="logo">
-            <img src="" alt="">
-            <h1>GlobeGetaways</h1>
-        </div>
-        <div class="navlinks">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <a href="#blog">Blog</a>
-            <a href="#careers">Careers</a>
-        </div>
-        <div class="btn">
-            <button>Request Invite</button>
+    <header class="navbar navbar-expand-lg site-navbar sticky-top">
+        <div class="container navbar-container">
+            <a href="#" class="navbar-brand site-brand">
+                <span class="brand-icon"><i class="fa-solid fa-globe"></i></span>
+                <span>GlobeGetaways</span>
+            </a>
+            <button class="navbar-toggler site-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <nav class="navbar-nav ms-auto me-lg-4 gap-lg-4 text-center">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#destinations" class="nav-link">Destinations</a>
+                    <a href="#packages" class="nav-link">Packages</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#testimonials" class="nav-link">Reviews</a>
+                </nav>
+                <div class="d-flex justify-content-center mt-3 mt-lg-0">
+                    <a href="#search" class="btn-primary">Book Now</a>
+                </div>
+            </div>
         </div>
     </header>
+
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="bg-circle bg-circle-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-sparkles"></i> Explore the world</span>
+                <h1 class="hero-title">Your next adventure <br>awaits discovery</h1>
+                <p class="hero-text">Curated travel experiences for modern explorers. Find inspiration, book with confidence, and create unforgettable memories.</p>
+                <div class="hero-buttons">
+                    <a href="#search" class="btn-primary btn-lg">Explore Destinations</a>
+                    <a href="#packages" class="btn-secondary btn-lg">View Packages</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">120+</span>
+                        <span class="stat-label">Destinations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15K+</span>
+                        <span class="stat-label">Happy Travelers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">Avg Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="images/hero-travel.jpg" alt="Travel hero" class="hero-image">
+                <div class="floating-card card-1"><i class="fa-solid fa-plane-departure"></i> Tokyo</div>
+                <div class="floating-card card-2"><i class="fa-solid fa-umbrella-beach"></i> Bali</div>
+                <div class="floating-card card-3"><i class="fa-solid fa-mountain"></i> Patagonia</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="search" class="search-section">
+        <div class="search-container">
+            <h2>Find Your Perfect Escape</h2>
+            <p class="search-intro">Tell us where you want to go and we will shape a trip suggestion around your dates, travel style, and group size.</p>
+            <form class="search-box" id="bookingForm" novalidate>
+                <div class="search-field">
+                    <label for="destinationInput">Destination</label>
+                    <input id="destinationInput" name="destination" type="text" placeholder="Choose a destination" list="destinationOptions" required>
+                    <datalist id="destinationOptions">
+                        <option value="Bali">
+                        <option value="Patagonia">
+                        <option value="Tokyo">
+                        <option value="Serengeti">
+                        <option value="Barcelona">
+                        <option value="Maldives">
+                    </datalist>
+                </div>
+                <div class="search-field">
+                    <label for="departureDate">Departure Date</label>
+                    <input id="departureDate" name="departure_date" type="date" required>
+                </div>
+                <div class="search-field">
+                    <label for="durationSelect">Duration</label>
+                    <select id="durationSelect" name="duration" required>
+                        <option value="">Select duration</option>
+                        <option value="2-3 days">2-3 days</option>
+                        <option value="4-7 days">4-7 days</option>
+                        <option value="8-10 days">8-10 days</option>
+                        <option value="10+ days">10+ days</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label for="travelersSelect">Travelers</label>
+                    <select id="travelersSelect" name="travelers" required>
+                        <option value="">Select travelers</option>
+                        <option value="1 traveler">1 traveler</option>
+                        <option value="2 travelers">2 travelers</option>
+                        <option value="3-4 travelers">3-4 travelers</option>
+                        <option value="5+ travelers">5+ travelers</option>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label for="styleSelect">Travel Style</label>
+                    <select id="styleSelect" name="style" required>
+                        <option value="">Select style</option>
+                        <option value="Relaxation">Relaxation</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Culture">Culture</option>
+                        <option value="Luxury">Luxury</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Plan My Trip</button>
+            </form>
+            <p class="booking-feedback" id="bookingFeedback" aria-live="polite"></p>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <div class="section-header">
+            <span class="section-badge">Explore</span>
+            <h2>Popular Destinations</h2>
+            <p>Handpicked locations for unforgettable experiences</p>
+        </div>
+        <div class="destinations-grid">
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="images/bali.jpg" alt="Bali" class="destination-img">
+                    <span class="card-label"><i class="fa-solid fa-umbrella-beach"></i> Beach</span>
+                </div>
+                <h3>Bali, Indonesia</h3>
+                <p>Tropical paradise with stunning beaches and rich culture</p>
+                <div class="card-footer">
+                    <span class="price">From $599</span>
+                    <a href="destination.html?place=bali" class="card-link" aria-label="View Bali"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="images/Patagonia.jpg.png" alt="Patagonia" class="destination-img">
+                    <span class="card-label"><i class="fa-solid fa-mountain"></i> Mountains</span>
+                </div>
+                <h3>Patagonia, Argentina</h3>
+                <p>Epic trekking and breathtaking mountain vistas</p>
+                <div class="card-footer">
+                    <span class="price">From $799</span>
+                    <a href="destination.html?place=patagonia" class="card-link" aria-label="View Patagonia"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="images/tokyo.jpg" alt="Tokyo" class="destination-img">
+                    <span class="card-label"><i class="fa-solid fa-torii-gate"></i> Culture</span>
+                </div>
+                <h3>Tokyo, Japan</h3>
+                <p>Ancient temples meet cutting-edge modern city life</p>
+                <div class="card-footer">
+                    <span class="price">From $649</span>
+                    <a href="destination.html?place=tokyo" class="card-link" aria-label="View Tokyo"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="images/serengeti.jpg" alt="Serengeti" class="destination-img">
+                    <span class="card-label"><i class="fa-solid fa-paw"></i> Wildlife</span>
+                </div>
+                <h3>Serengeti, Tanzania</h3>
+                <p>Witness the great migration and African wilderness</p>
+                <div class="card-footer">
+                    <span class="price">From $899</span>
+                    <a href="destination.html?place=serengeti" class="card-link" aria-label="View Serengeti"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="images/barcelona.jpg" alt="Barcelona" class="destination-img">
+                    <span class="card-label"><i class="fa-solid fa-city"></i> Urban</span>
+                </div>
+                <h3>Barcelona, Spain</h3>
+                <p>Artistic architecture and vibrant Mediterranean culture</p>
+                <div class="card-footer">
+                    <span class="price">From $549</span>
+                    <a href="destination.html?place=barcelona" class="card-link" aria-label="View Barcelona"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="destination-card">
+                <div class="card-image">
+                    <img src="images/maldives.jpg" alt="Maldives" class="destination-img">
+                    <span class="card-label"><i class="fa-solid fa-water"></i> Island</span>
+                </div>
+                <h3>Maldives</h3>
+                <p>Luxurious tropical escapes with crystal waters</p>
+                <div class="card-footer">
+                    <span class="price">From $1299</span>
+                    <a href="destination.html?place=maldives" class="card-link" aria-label="View Maldives"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="packages">
+        <div class="section-header">
+            <span class="section-badge">Offers</span>
+            <h2>Travel Packages</h2>
+            <p>Curated collections for every travel style</p>
+        </div>
+        <div class="packages-grid">
+            <div class="package-card">
+                <div class="package-header">
+                    <h3>Weekend Escape</h3>
+                    <span class="package-tag">2-3 days</span>
+                </div>
+                <ul class="package-features">
+                    <li><i class="fa-solid fa-check"></i> Flights included</li>
+                    <li><i class="fa-solid fa-check"></i> 2 nights accommodation</li>
+                    <li><i class="fa-solid fa-check"></i> Guided tours</li>
+                    <li><i class="fa-solid fa-check"></i> Meals included</li>
+                </ul>
+                <div class="package-footer">
+                    <span class="package-price">$599</span>
+                    <a href="#" class="btn-secondary btn-sm">Book Now</a>
+                </div>
+            </div>
+            <div class="package-card featured">
+                <div class="package-badge">Most Popular</div>
+                <div class="package-header">
+                    <h3>Extended Adventure</h3>
+                    <span class="package-tag">7-10 days</span>
+                </div>
+                <ul class="package-features">
+                    <li><i class="fa-solid fa-check"></i> Premium flights</li>
+                    <li><i class="fa-solid fa-check"></i> 8 nights accommodation</li>
+                    <li><i class="fa-solid fa-check"></i> Expert local guides</li>
+                    <li><i class="fa-solid fa-check"></i> All meals and activities</li>
+                </ul>
+                <div class="package-footer">
+                    <span class="package-price">$1499</span>
+                    <a href="#" class="btn-primary btn-sm">Book Now</a>
+                </div>
+            </div>
+            <div class="package-card">
+                <div class="package-header">
+                    <h3>Luxury Experience</h3>
+                    <span class="package-tag">10+ days</span>
+                </div>
+                <ul class="package-features">
+                    <li><i class="fa-solid fa-check"></i> First-class flights</li>
+                    <li><i class="fa-solid fa-check"></i> 5-star hotels</li>
+                    <li><i class="fa-solid fa-check"></i> Private guides</li>
+                    <li><i class="fa-solid fa-check"></i> Exclusive experiences</li>
+                </ul>
+                <div class="package-footer">
+                    <span class="package-price">$2999</span>
+                    <a href="#" class="btn-secondary btn-sm">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/about-travel.jpg" alt="About GlobeGetaways" class="about-img">
+            </div>
+            <div class="about-content">
+                <span class="section-badge">Our Story</span>
+                <h2>Why GlobeGetaways?</h2>
+                <p>We believe travel should be simple, inspiring, and accessible to everyone. GlobeGetaways was built by young explorers for young explorers, combining curated experiences with cutting-edge technology.</p>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <span class="about-icon"><i class="fa-solid fa-compass"></i></span>
+                        <h4>Carefully Curated</h4>
+                        <p>Expert-vetted destinations and experiences</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-icon"><i class="fa-solid fa-gem"></i></span>
+                        <h4>Premium Quality</h4>
+                        <p>Luxury accommodations and local expertise</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-icon"><i class="fa-solid fa-handshake"></i></span>
+                        <h4>Local Guides</h4>
+                        <p>Connect with authentic local experiences</p>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-icon"><i class="fa-solid fa-wallet"></i></span>
+                        <h4>Best Value</h4>
+                        <p>Transparent pricing with no hidden fees</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="section-header">
+            <span class="section-badge">Advantage</span>
+            <h2>Why Choose Us</h2>
+            <p>Industry-leading service and unmatched experience</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-route"></i></div>
+                <h3>Expert Planning</h3>
+                <p>Itineraries designed by travel experts with 20+ years experience</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                <h3>Full Protection</h3>
+                <p>24/7 support and comprehensive travel insurance included</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                <h3>Global Network</h3>
+                <p>Partners in 150+ countries ensuring quality service worldwide</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3>Instant Booking</h3>
+                <p>AI-powered search and instant confirmation within minutes</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="statistics">
+        <div class="stats-container">
+            <div class="stat-box">
+                <span class="stat-counter" data-target="120">0</span>
+                <p>Destinations</p>
+            </div>
+            <div class="stat-box">
+                <span class="stat-counter" data-target="15000">0</span>
+                <p>Happy Travelers</p>
+            </div>
+            <div class="stat-box">
+                <span class="stat-counter" data-target="50000">0</span>
+                <p>Bookings Completed</p>
+            </div>
+            <div class="stat-box">
+                <span class="stat-counter" data-target="98">0</span>
+                <p>Satisfaction Rate %</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <span class="section-badge">Reviews</span>
+            <h2>What Travelers Say</h2>
+            <p>Real stories from our amazing community</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-text">"GlobeGetaways made planning my dream trip to Bali incredibly easy. The local guides were amazing!"</p>
+                <div class="testimonial-author">
+                    <img src="images/user1.jpg" alt="Traveler" class="avatar">
+                    <div>
+                        <h4>Sarah Johnson</h4>
+                        <p>Bali Explorer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-text">"Seamless booking experience and incredible value for money. Highly recommend for adventure seekers!"</p>
+                <div class="testimonial-author">
+                    <img src="images/user2.jpg" alt="Traveler" class="avatar">
+                    <div>
+                        <h4>Marcus Chen</h4>
+                        <p>Patagonia Hiker</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-text">"Best travel platform ever! The 24/7 support team saved my trip when plans changed."</p>
+                <div class="testimonial-author">
+                    <img src="images/user3.jpg" alt="Traveler" class="avatar">
+                    <div>
+                        <h4>Emma Rodriguez</h4>
+                        <p>Tokyo Artist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready for Your Next Adventure?</h2>
+            <p>Start exploring curated destinations and book your dream trip today</p>
+            <div class="cta-buttons">
+                <a href="#search" class="btn-primary btn-lg">Explore Now</a>
+                <a href="#about" class="btn-secondary btn-lg">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade booking-modal" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content booking-modal-content">
+                <div class="modal-header border-0">
+                    <div>
+                        <span class="section-badge">Trip Request</span>
+                        <h3 class="modal-title" id="bookingModalLabel">Your travel plan is ready</h3>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="booking-modal-copy">We prepared a matching destination page based on your trip details.</p>
+                    <div class="booking-summary" id="bookingSummary"></div>
+                </div>
+                <div class="modal-footer border-0">
+                    <a href="destination.html" class="btn-primary" id="bookingResultLink">View Matching Trip</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>GlobeGetaways</h3>
+                <p>Your gateway to unforgettable travel experiences worldwide.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kunjandhandhukia/" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/KDhandhuki82973" aria-label="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.facebook.com/Kunjan.Dhandhukia" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/@KunjandhanGamer" aria-label="YouTube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#packages">Packages</a>
+                <a href="#about">About</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="#">Travel Guide</a>
+                <a href="#">FAQ</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Get travel tips and exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GlobeGetaways. Designed for modern explorers. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
