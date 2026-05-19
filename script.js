@@ -36,7 +36,7 @@ const destinationData = {
     patagonia: {
         name: "Patagonia, Argentina",
         shortName: "Patagonia",
-        image: "images/patagonia.jpg",
+        image: "images/Patagonia.png",
         badge: "Mountain Adventure",
         description: "A dramatic expedition for travelers who want glacier views, trekking routes, and cinematic landscapes.",
         longDescription: "Patagonia is built for people who love wide-open nature and stronger outdoor energy. It combines iconic hikes, clean mountain air, and boutique lodges that soften the edge of a true adventure trip.",
@@ -70,7 +70,7 @@ const destinationData = {
     tokyo: {
         name: "Tokyo, Japan",
         shortName: "Tokyo",
-        image: "images/tokyo.jpg",
+        image: "images/tokyo.png",
         badge: "Culture and City",
         description: "A layered city break blending neon districts, heritage neighborhoods, food culture, and design-led stays.",
         longDescription: "Tokyo is a precision-crafted city experience. You get a mix of quiet shrines, fast nightlife, incredible food, and style-forward hotels that make every part of the trip feel intentional.",
@@ -104,7 +104,7 @@ const destinationData = {
     serengeti: {
         name: "Serengeti, Tanzania",
         shortName: "Serengeti",
-        image: "images/serengeti.jpg",
+        image: "images/Serengeti.png",
         badge: "Wildlife Journey",
         description: "A high-impact safari escape with golden-hour game drives, premium camps, and unforgettable wildlife encounters.",
         longDescription: "The Serengeti is all about presence. It is one of those destinations where the scale of the landscape and the rhythm of the wildlife make every day feel rare, cinematic, and deeply memorable.",
@@ -138,7 +138,7 @@ const destinationData = {
     barcelona: {
         name: "Barcelona, Spain",
         shortName: "Barcelona",
-        image: "images/barcelona.jpg",
+        image: "images/barcelona.png",
         badge: "Urban Escape",
         description: "A Mediterranean city break packed with design, architecture, beaches, and vibrant street life.",
         longDescription: "Barcelona is a strong fit for travelers who want culture without slowing down too much. It brings together beach energy, walkable neighborhoods, standout food, and iconic architecture in one easy trip.",
@@ -172,7 +172,7 @@ const destinationData = {
     maldives: {
         name: "Maldives",
         shortName: "Maldives",
-        image: "images/maldives.jpg",
+        image: "images/Maldives.png",
         badge: "Island Luxury",
         description: "A polished tropical retreat built around privacy, overwater stays, and effortless luxury.",
         longDescription: "The Maldives works best when you want pure escape. It is a slower, softer experience centered on ocean views, premium resort service, water activities, and uninterrupted calm.",

@@ -148,13 +148,15 @@ img {
 }
 
 .btn-secondary {
-    background: rgba(2, 75, 104, 0.08);
-    color: var(--deep-teal);
+    background: white;
+    color: black;
     border: 2px solid rgba(2, 75, 104, 0.15);
+    transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-    background: rgba(2, 75, 104, 0.15);
+    background: black;
+    color: white;
     border-color: rgba(2, 75, 104, 0.3);
     transform: translateY(-3px);
 }
@@ -290,7 +292,7 @@ img {
 
 .hero-title {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     color: var(--deep-teal);
@@ -379,7 +381,7 @@ img {
 .search-section h2,
 .cta-content h2 {
     text-align: center;
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-size: 2.2rem;
     margin-bottom: 2.5rem;
     color: var(--deep-teal);
     font-weight: 800;
@@ -510,10 +512,14 @@ img {
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
+.detail-copy .section-badge i {
+    color: black;
+    font-size: 1rem;
+}
 
 .section-header h2 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--deep-teal);
     font-weight: 800;
@@ -822,7 +828,7 @@ img {
 }
 
 .about-content h2 {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-size: 2.4rem;
     margin: 1rem 0 1.5rem;
     color: var(--deep-teal);
 }
@@ -909,7 +915,7 @@ img {
 
 .stat-counter {
     display: block;
-    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-size: 3rem;
     font-weight: 800;
     font-family: 'Space Grotesk', sans-serif;
     margin-bottom: 0.5rem;
@@ -961,7 +967,7 @@ img {
 .cta {
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('images/cta-bg.jpg');
+        url('images/cta-image.png');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -1156,7 +1162,7 @@ img {
 
 .detail-copy h1 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    font-size: 3.8rem;
     line-height: 1.05;
     margin-bottom: 1rem;
     color: var(--deep-teal);
@@ -1177,6 +1183,11 @@ img {
     color: var(--teal);
     text-decoration: none;
     font-weight: 700;
+    transition: all 0.3s ease;
+
+}
+.detail-back:hover{
+    transform: translateY(-3px);
 }
 
 .detail-highlights,
@@ -1215,7 +1226,7 @@ img {
 }
 
 .detail-main-image {
-    height: 540px;
+    height: 350px;
     object-fit: cover;
     border-radius: 32px;
     box-shadow: var(--shadow-lg);
@@ -1688,5 +1699,77 @@ img {
     .detail-inclusions,
     .detail-inquiry {
         padding-inline: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-visual {
+        height: 420px;
+    }
+
+    .hero-visual .hero-image,
+    .detail-main-image {
+        border-radius: 28px;
+    }
+
+    .floating-card {
+        display: none;
+    }
+
+    .search-box {
+        padding: 1.5rem;
+    }
+
+    .navbar-container {
+        padding: 1rem 1.25rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .booking-modal .modal-dialog {
+        max-width: 640px;
+        margin: 1rem;
+    }
+
+    .detail-price-card {
+        position: static;
+        width: 100%;
+        margin-top: 1.5rem;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        box-shadow: var(--shadow);
+    }
+
+    .detail-price-card strong {
+        font-size: 1.85rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .site-brand {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.75rem 1.2rem;
+        font-size: 0.95rem;
     }
 }
