@@ -971,6 +971,7 @@ img {
     background-size: cover;
     background-position: center;
     text-align: center;
+    background-attachment: fixed;
 }
 
 .cta-content h2,
