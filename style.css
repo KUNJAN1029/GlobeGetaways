@@ -149,14 +149,14 @@ img {
 
 .btn-secondary {
     background: white;
-    color: black;
+    color: black !important;
     border: 2px solid rgba(2, 75, 104, 0.15);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease !important;
 }
 
 .btn-secondary:hover {
     background: black;
-    color: white;
+    color: white !important;
     border-color: rgba(2, 75, 104, 0.3);
     transform: translateY(-3px);
 }
