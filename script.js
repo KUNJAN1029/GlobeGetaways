@@ -74,7 +74,7 @@ const destinationData = {
       "A dramatic expedition for travelers who want glacier views, trekking routes, and cinematic landscapes.",
     longDescription:
       "Patagonia is built for people who love wide-open nature and stronger outdoor energy. It combines iconic hikes, clean mountain air, and boutique lodges that soften the edge of a true adventure trip.",
-    price: "$799",
+    price: "₹2,00,999",
     duration: "8 days curated",
     facts: [
       { label: "Best Season", value: "November to March" },
@@ -149,7 +149,7 @@ const destinationData = {
       "A layered city break blending neon districts, heritage neighborhoods, food culture, and design-led stays.",
     longDescription:
       "Tokyo is a precision-crafted city experience. You get a mix of quiet shrines, fast nightlife, incredible food, and style-forward hotels that make every part of the trip feel intentional.",
-    price: "$649",
+    price: "₹1,07,000",
     duration: "5 days curated",
     facts: [
       { label: "Best Season", value: "March to May" },
@@ -184,15 +184,15 @@ const destinationData = {
     travelers: ["City explorers", "Food lovers", "Creative travelers"],
     gallery: [
       {
-        src: "images/gallery-tokyo-1.jpg",
+        src: "images/tokyo2.png",
         alt: "Tokyo city street and skyline scene",
       },
       {
-        src: "images/gallery-tokyo-2.jpg",
+        src: "images/tokyo3.png",
         alt: "Tokyo cinematic travel atmosphere",
       },
       {
-        src: "images/gallery-tokyo-3.jpg",
+        src: "images/tokyo4.png",
         alt: "Tokyo lifestyle and planning scene",
       },
     ],
@@ -224,7 +224,7 @@ const destinationData = {
       "A high-impact safari escape with golden-hour game drives, premium camps, and unforgettable wildlife encounters.",
     longDescription:
       "The Serengeti is all about presence. It is one of those destinations where the scale of the landscape and the rhythm of the wildlife make every day feel rare, cinematic, and deeply memorable.",
-    price: "$899",
+    price: "₹4,00,000",
     duration: "7 days curated",
     facts: [
       { label: "Best Season", value: "June to October" },
@@ -263,15 +263,15 @@ const destinationData = {
     ],
     gallery: [
       {
-        src: "images/gallery-serengeti-1.jpg",
+        src: "images/Serengeti2.png",
         alt: "Serengeti wildlife and plains view",
       },
       {
-        src: "images/gallery-serengeti-2.jpg",
+        src: "images/Serengeti3.png",
         alt: "Serengeti golden sky and safari atmosphere",
       },
       {
-        src: "images/gallery-serengeti-3.jpg",
+        src: "images/Serengeti4.png",
         alt: "Serengeti travel planning and camp mood",
       },
     ],
@@ -303,7 +303,7 @@ const destinationData = {
       "A Mediterranean city break packed with design, architecture, beaches, and vibrant street life.",
     longDescription:
       "Barcelona is a strong fit for travelers who want culture without slowing down too much. It brings together beach energy, walkable neighborhoods, standout food, and iconic architecture in one easy trip.",
-    price: "$549",
+    price: "₹83,600",
     duration: "5 days curated",
     facts: [
       { label: "Best Season", value: "April to June" },
@@ -338,15 +338,15 @@ const destinationData = {
     travelers: ["Couples", "Friend groups", "First-time Europe visitors"],
     gallery: [
       {
-        src: "images/gallery-barcelona-1.jpg",
+        src: "images/Barcelona2.png",
         alt: "Barcelona architecture and street scene",
       },
       {
-        src: "images/gallery-barcelona-2.jpg",
+        src: "images/Barcelona3.png",
         alt: "Barcelona travel mood and city atmosphere",
       },
       {
-        src: "images/gallery-barcelona-3.jpg",
+        src: "images/Barcelona4.png",
         alt: "Barcelona planning and lifestyle image",
       },
     ],
@@ -378,7 +378,7 @@ const destinationData = {
       "A polished tropical retreat built around privacy, overwater stays, and effortless luxury.",
     longDescription:
       "The Maldives works best when you want pure escape. It is a slower, softer experience centered on ocean views, premium resort service, water activities, and uninterrupted calm.",
-    price: "$1299",
+    price: "₹24,968",
     duration: "6 days curated",
     facts: [
       { label: "Best Season", value: "December to April" },
@@ -413,15 +413,15 @@ const destinationData = {
     travelers: ["Couples", "Luxury travelers", "Celebration trips"],
     gallery: [
       {
-        src: "images/gallery-maldives-1.jpg",
+        src: "images/Maldives2.png ",
         alt: "Maldives overwater villa and sea view",
       },
       {
-        src: "images/gallery-maldives-2.jpg",
+        src: "images/Maldives3.png",
         alt: "Maldives cinematic sky and ocean atmosphere",
       },
       {
-        src: "images/gallery-maldives-3.jpg",
+        src: "images/Maldives4.png",
         alt: "Maldives travel lifestyle scene",
       },
     ],
