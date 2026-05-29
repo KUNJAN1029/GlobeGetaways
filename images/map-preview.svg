@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">GlobeGetaways map preview</title>
+  <desc id="desc">A stylized map preview with roads, location markers, and a highlighted destination pin.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#e8fbff"/>
+      <stop offset="0.55" stop-color="#e7fff0"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#024b68" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="520" fill="url(#sky)"/>
+  <path d="M-80 115 C160 62 300 158 520 105 C775 44 880 164 1300 74" fill="none" stroke="#b6eadf" stroke-width="58" stroke-linecap="round" opacity="0.9"/>
+  <path d="M-95 420 C105 315 260 380 450 305 C650 226 750 310 900 248 C1040 190 1110 120 1290 170" fill="none" stroke="#b9e9ff" stroke-width="70" stroke-linecap="round" opacity="0.9"/>
+  <path d="M100 555 C210 400 280 340 400 300 C570 244 610 118 725 -20" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round"/>
+  <path d="M105 555 C215 400 285 340 405 300 C575 244 615 118 730 -20" fill="none" stroke="#8bd9d1" stroke-width="8" stroke-linecap="round" stroke-dasharray="22 22"/>
+  <path d="M-35 245 C200 215 340 250 540 220 C780 185 980 205 1240 150" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round"/>
+  <path d="M-35 245 C200 215 340 250 540 220 C780 185 980 205 1240 150" fill="none" stroke="#7acbe8" stroke-width="8" stroke-linecap="round" stroke-dasharray="20 24"/>
+  <path d="M170 -40 C250 125 360 165 470 210 C610 268 710 310 865 545" fill="none" stroke="#ffffff" stroke-width="28" stroke-linecap="round"/>
+  <path d="M170 -40 C250 125 360 165 470 210 C610 268 710 310 865 545" fill="none" stroke="#a9df96" stroke-width="7" stroke-linecap="round" stroke-dasharray="18 20"/>
+  <g opacity="0.34">
+    <rect x="72" y="72" width="118" height="82" rx="18" fill="#ffffff"/>
+    <rect x="860" y="62" width="150" height="94" rx="18" fill="#ffffff"/>
+    <rect x="965" y="325" width="130" height="86" rx="18" fill="#ffffff"/>
+    <rect x="250" y="352" width="140" height="90" rx="18" fill="#ffffff"/>
+    <rect x="555" y="78" width="116" height="78" rx="18" fill="#ffffff"/>
+  </g>
+  <g fill="#008c9e" opacity="0.8">
+    <circle cx="205" cy="215" r="11"/>
+    <circle cx="830" cy="205" r="11"/>
+    <circle cx="985" cy="292" r="11"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <path d="M648 165c-66 0-120 53-120 119 0 85 120 193 120 193s120-108 120-193c0-66-54-119-120-119z" fill="#008c9e"/>
+    <circle cx="648" cy="284" r="48" fill="#ffffff"/>
+    <circle cx="648" cy="284" r="22" fill="#6ee7b7"/>
+  </g>
+  <g transform="translate(64 384)">
+    <rect width="305" height="82" rx="24" fill="#ffffff" opacity="0.94"/>
+    <circle cx="45" cy="41" r="18" fill="#6ee7b7"/>
+    <path d="M39 42l9 9 18-24" fill="none" stroke="#024b68" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="78" y="36" fill="#024b68" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="700">GlobeGetaways</text>
+    <text x="78" y="62" fill="#4f6d7a" font-family="Poppins, Arial, sans-serif" font-size="16">Tap to open directions</text>
+  </g>
+</svg>
